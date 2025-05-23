@@ -12,3 +12,8 @@ body {
 .Card {
   width: 600px;
 }
+
+.CardDiv {
+  display: flex;
+  flex-direction: row;
+}

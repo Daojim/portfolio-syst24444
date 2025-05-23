@@ -1,35 +1,96 @@
-<mat-card class="Card">
-  <mat-card-header>
-    <div
-      mat-card-avatar
-      [ngStyle]="{ backgroundColor: 'yellow' }"
-      class=""
-    ></div>
-    <!-- Create a CSS class to include a 
-           background-image with background-size: cover -->
-    <mat-card-title>Calculator</mat-card-title>
-    <mat-card-subtitle>HTML/CSS/JS</mat-card-subtitle>
-  </mat-card-header>
+<div class="CardDiv">
+  <div>
+    <mat-card class="Card">
+      <mat-card-header>
+        <div
+          mat-card-avatar
+          [ngStyle]="{ backgroundColor: 'yellow' }"
+          class=""
+        ></div>
+        <mat-card-title>Calculator</mat-card-title>
+        <mat-card-subtitle>HTML/CSS/JS</mat-card-subtitle>
+      </mat-card-header>
 
-  <mat-card-content>
-    <img
-      mat-card-image
-      src="images/calculator.png"
-      alt="Calculator screenshot"
-      width="300"
-    />
-    <p>
-      A typical calculator project. I made this for The Odin Project when I was
-      going through it and it taught me quite a bit on thinking about how to do
-      arithmetics with programming.
-    </p>
-  </mat-card-content>
+      <mat-card-content>
+        <img
+          mat-card-image
+          src="images/calculator.png"
+          alt="Calculator screenshot"
+          width="300"
+        />
+        <p>
+          A typical calculator project. I made this for The Odin Project when I
+          was going through it and it taught me quite a bit on thinking about
+          how to do arithmetics with programming.
+        </p>
+      </mat-card-content>
 
-  <mat-card-actions>
-    <button mat-button>
-      <a href="https://daojim.github.io/calculator/">Check it out here!</a>
-    </button>
-  </mat-card-actions>
+      <mat-card-actions>
+        <button mat-button>
+          <a href="https://daojim.github.io/calculator/">Calculate!</a>
+        </button>
+      </mat-card-actions>
 
-  <mat-card-footer>https://github.com/Daojim/calculator</mat-card-footer>
-</mat-card>
+      <mat-card-footer>https://github.com/Daojim/calculator</mat-card-footer>
+    </mat-card>
+  </div>
+  <div>
+    <mat-card class="Card">
+      <mat-card-header>
+        <div
+          mat-card-avatar
+          [ngStyle]="{ backgroundColor: 'red' }"
+          class=""
+        ></div>
+        <mat-card-title>Pomodoro</mat-card-title>
+        <mat-card-subtitle>React/JS</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <img
+          mat-card-image
+          src="images/pomodoro.png"
+          alt="Pomodoro screenshot"
+        />
+        <p>
+          A pomodoro web app. I wanted to make my own Pomodoro to help me stay
+          focused.
+        </p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-button>
+          <a href="https://pomodoro-lac-ten.vercel.app/">Focus!</a>
+        </button>
+      </mat-card-actions>
+
+      <mat-card-footer>https://github.com/Daojim/pomodoro</mat-card-footer>
+    </mat-card>
+  </div>
+  <div>
+    <mat-card class="Card">
+      <mat-card-header>
+        <div
+          mat-card-avatar
+          [ngStyle]="{ backgroundColor: 'blue' }"
+          class=""
+        ></div>
+        <mat-card-title>Etch-a-sketch</mat-card-title>
+        <mat-card-subtitle>HTML/CSS/JS</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <img mat-card-image src="images/etchasketch.png" alt="" width="500" />
+        <p>An etch-a-sketch webpage to test mouse hover.</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-button>
+          <a href="https://daojim.github.io/etch-a-sketch/">Draw!</a>
+        </button>
+      </mat-card-actions>
+
+      <mat-card-footer>https://github.com/Daojim/etch-a-sketch</mat-card-footer>
+    </mat-card>
+  </div>
+</div>
