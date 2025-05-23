@@ -4,34 +4,33 @@
       <mat-card-header>
         <div
           mat-card-avatar
-          [ngStyle]="{ backgroundColor: 'yellow' }"
+          [ngStyle]="{ backgroundColor: 'green' }"
           class=""
         ></div>
-        <mat-card-title>Calculator</mat-card-title>
-        <mat-card-subtitle>HTML/CSS/JS</mat-card-subtitle>
+        <mat-card-title>To-do List</mat-card-title>
+        <mat-card-subtitle>React/TypeScript/Tailwind</mat-card-subtitle>
       </mat-card-header>
 
       <mat-card-content>
         <img
           mat-card-image
-          src="images/calculator.png"
-          alt="Calculator screenshot"
-          width="300"
+          src="images/todolist.png"
+          alt="To-do list screenshot"
+          width=""
         />
         <p>
-          A typical calculator project. I made this for The Odin Project when I
-          was going through it and it taught me quite a bit on thinking about
-          how to do arithmetics with programming.
+          A basic to-do list. This was a good learning experience on learning
+          how to deal with React's useState.
         </p>
       </mat-card-content>
 
       <mat-card-actions>
         <button mat-button>
-          <a href="https://daojim.github.io/calculator/">Calculate!</a>
+          <a href="https://to-do-list-weld-kappa.vercel.app/">To-do!</a>
         </button>
       </mat-card-actions>
 
-      <mat-card-footer>https://github.com/Daojim/calculator</mat-card-footer>
+      <mat-card-footer>https://github.com/Daojim/to-do-list</mat-card-footer>
     </mat-card>
   </div>
   <div>
@@ -72,6 +71,42 @@
       <mat-card-header>
         <div
           mat-card-avatar
+          [ngStyle]="{ backgroundColor: 'yellow' }"
+          class=""
+        ></div>
+        <mat-card-title>Calculator</mat-card-title>
+        <mat-card-subtitle>HTML/CSS/JS</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <img
+          mat-card-image
+          src="images/calculator.png"
+          alt="Calculator screenshot"
+          width="300"
+        />
+        <p>
+          A typical calculator project. I made this for The Odin Project when I
+          was going through it and it taught me quite a bit on thinking about
+          how to do arithmetics with programming.
+        </p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-button>
+          <a href="https://daojim.github.io/calculator/">Calculate!</a>
+        </button>
+      </mat-card-actions>
+
+      <mat-card-footer>https://github.com/Daojim/calculator</mat-card-footer>
+    </mat-card>
+  </div>
+
+  <div>
+    <mat-card class="Card">
+      <mat-card-header>
+        <div
+          mat-card-avatar
           [ngStyle]="{ backgroundColor: 'blue' }"
           class=""
         ></div>
@@ -96,40 +131,6 @@
       </mat-card-actions>
 
       <mat-card-footer>https://github.com/Daojim/etch-a-sketch</mat-card-footer>
-    </mat-card>
-  </div>
-  <div>
-    <mat-card class="Card">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          [ngStyle]="{ backgroundColor: 'green' }"
-          class=""
-        ></div>
-        <mat-card-title>To-do List</mat-card-title>
-        <mat-card-subtitle>React/TypeScript/Tailwind</mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-card-content>
-        <img
-          mat-card-image
-          src="images/todolist.png"
-          alt="To-do list screenshot"
-          width=""
-        />
-        <p>
-          A basic to-do list. This was a good learning experience on learning
-          how to deal with React's useState.
-        </p>
-      </mat-card-content>
-
-      <mat-card-actions>
-        <button mat-button>
-          <a href="https://to-do-list-weld-kappa.vercel.app/">To-do!</a>
-        </button>
-      </mat-card-actions>
-
-      <mat-card-footer>https://github.com/Daojim/to-do-list</mat-card-footer>
     </mat-card>
   </div>
 </div>
