@@ -8,7 +8,11 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatCardModule } from '@angular/material/card';
-import { Personal, Contacts } from './interfaces/project-interfaces';
+import {
+  Personal,
+  Contacts,
+  Technologies,
+} from './interfaces/project-interfaces';
 @Component({
   selector: 'app-root',
   imports: [
@@ -37,5 +41,12 @@ export class AppComponent {
   contacts: Contacts = {
     linkedin: 'https://www.linkedin.com/in/daojim/',
     github: 'https://github.com/daojim',
+  };
+
+  tech: Technologies = {
+    tech1: 'Angular',
+    tech2: 'Material UI',
+    tech3: 'Google Fonts',
+    tech4: 'Visual Studio Code',
   };
 }

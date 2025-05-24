@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Technologies } from '../interfaces/project-interfaces';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
-  template: `<ul>Technologies used:
-    <li>Angular</li>
-  </ul>`,
+  imports: [CommonModule],
+  templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
 })
-export class FooterComponent {}
+export class FooterComponent {
+  @Input() tech!: Technologies;
+}
