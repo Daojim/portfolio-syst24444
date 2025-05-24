@@ -9,4 +9,6 @@ import { Contacts } from '../interfaces/project-interfaces';
 })
 export class ContactComponent {
   @Input() contacts!: Contacts;
+  linkedinLink = 'https://www.linkedin.com/in/daojim/';
+  githubLink = 'https://github.com/Daojim/';
 }
