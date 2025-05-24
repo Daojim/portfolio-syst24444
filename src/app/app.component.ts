@@ -34,7 +34,7 @@ export class AppComponent {
     motto: 'Just do it.',
   };
 
-  contact: Contacts = {
+  contacts: Contacts = {
     linkedin: 'https://www.linkedin.com/in/daojim/',
     github: 'https://github.com/daojim',
   };

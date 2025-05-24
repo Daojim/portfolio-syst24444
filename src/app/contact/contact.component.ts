@@ -8,5 +8,5 @@ import { Contacts } from '../interfaces/project-interfaces';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
-  // @Input() contact!: Contacts;
+  @Input() contacts!: Contacts;
 }
