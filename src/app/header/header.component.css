@@ -4,8 +4,13 @@
 
 .headerRole {
   text-align: center;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .headerMotto {
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
 }
