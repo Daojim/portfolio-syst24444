@@ -15,4 +15,5 @@ export interface Technologies {
   tech2: string;
   tech3: string;
   tech4: string;
+  tech5: string;
 }

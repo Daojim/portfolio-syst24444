@@ -48,5 +48,6 @@ export class AppComponent {
     tech2: 'Material UI',
     tech3: 'Google Fonts',
     tech4: 'Visual Studio Code',
+    tech5: 'Github',
   };
 }
