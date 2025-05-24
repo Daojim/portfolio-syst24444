@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MaterialModule } from './modules/material-ui.module';
 import { CommonModule } from '@angular/common';
@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatCardModule } from '@angular/material/card';
+import { Personal, Contacts } from './interfaces/project-interfaces';
 @Component({
   selector: 'app-root',
   imports: [
@@ -26,4 +27,15 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class AppComponent {
   title = 'portfolio';
+  mydata: Personal = {
+    first: 'Jimmy',
+    last: 'Dao',
+    role: 'Software Development and Network Engineer Student',
+    motto: 'Just do it.',
+  };
+
+  contact: Contacts = {
+    linkedin: 'https://www.linkedin.com/in/daojim/',
+    github: 'https://github.com/daojim',
+  };
 }
