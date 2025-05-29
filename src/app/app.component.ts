@@ -44,6 +44,7 @@ export class AppComponent {
   };
 
   tech: Technologies = {
+    techUsed: 'Technologies used: ',
     tech1: 'Angular',
     tech2: 'Material UI',
     tech3: 'Google Fonts',

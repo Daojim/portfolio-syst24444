@@ -11,6 +11,7 @@ export interface Contacts {
 }
 
 export interface Technologies {
+  techUsed: string;
   tech1: string;
   tech2: string;
   tech3: string;
@@ -22,6 +23,7 @@ export interface Projects {
   title: string;
   subtitle: string;
   image: string;
+  imageAlt: string;
   description: string;
   projectLink: string;
   buttonLabel: string;
