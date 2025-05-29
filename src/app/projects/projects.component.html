@@ -7,30 +7,29 @@
           [ngStyle]="{ backgroundColor: 'green' }"
           class=""
         ></div>
-        <mat-card-title>To-do List</mat-card-title>
-        <mat-card-subtitle>React/TypeScript/Tailwind</mat-card-subtitle>
+        <mat-card-title>{{ todolist.title }}</mat-card-title>
+        <mat-card-subtitle>{{ todolist.subtitle }}</mat-card-subtitle>
       </mat-card-header>
 
       <mat-card-content>
         <img
           mat-card-image
-          src="images/todolist.png"
+          src="{{ todolist.image }}"
           alt="To-do list screenshot"
           width=""
         />
         <p>
-          A basic to-do list. This was a good learning experience on learning
-          how to deal with React's useState.
+          {{ todolist.description }}
         </p>
       </mat-card-content>
 
       <mat-card-actions>
         <button mat-button>
-          <a href="https://to-do-list-weld-kappa.vercel.app/">To-do!</a>
+          <a href="{{ todolist.projectLink }}">{{ todolist.buttonLabel }}</a>
         </button>
       </mat-card-actions>
 
-      <mat-card-footer>https://github.com/Daojim/to-do-list</mat-card-footer>
+      <mat-card-footer>{{ todolist.projectGithub }}</mat-card-footer>
     </mat-card>
   </div>
   <div>
@@ -148,9 +147,9 @@
       <mat-card-content>
         <img
           mat-card-image
-          src="images/comingsoon.jpg"
-          alt="Coming soonscreenshot"
-          width="500"
+          src="images/pokedex.png"
+          alt="Pokedex soonscreenshot"
+          width=""
         />
         <p>
           A future Pokedex project. The goal of this project is to learn more
@@ -166,7 +165,7 @@
         </button>
       </mat-card-actions>
 
-      <mat-card-footer>https://github.com/Daojim/etch-a-sketch</mat-card-footer>
+      <mat-card-footer>https://github.com/Daojim/pokedex</mat-card-footer>
     </mat-card>
   </div>
 </div>

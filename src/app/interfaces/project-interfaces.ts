@@ -17,3 +17,13 @@ export interface Technologies {
   tech4: string;
   tech5: string;
 }
+
+export interface Projects {
+  title: string;
+  subtitle: string;
+  image: string;
+  description: string;
+  projectLink: string;
+  buttonLabel: string;
+  projectGithub: string;
+}
