@@ -5,7 +5,7 @@ body {
   height: 100%;
 }
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: rgb(219, 170, 180);
 }
@@ -18,6 +18,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
 }
 
 .matCardHeader {
