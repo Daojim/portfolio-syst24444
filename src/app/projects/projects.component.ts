@@ -70,14 +70,11 @@ export class ProjectsComponent {
     projectGithub: 'https://github.com/Daojim/pokedex',
   };
 
-  // projectName: Projects = {
-  //       title: '',
-  //       subtitle: '',
-  //       image: '',
-  //       imageAlt: '',
-  //       description: '',
-  //       projectLink: '',
-  //       buttonLabel: '',
-  //       projectGithub: '',
-  //     }
+  projects = [
+    this.todolist,
+    this.pomodoro,
+    this.calculator,
+    this.etch,
+    this.pokedex,
+  ];
 }
