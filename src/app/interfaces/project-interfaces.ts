@@ -24,6 +24,7 @@ export interface Projects {
   subtitle: string;
   image: string;
   imageAlt: string;
+  imageWidth: string;
   description: string;
   projectLink: string;
   buttonLabel: string;

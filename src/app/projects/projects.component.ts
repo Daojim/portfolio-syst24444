@@ -16,6 +16,7 @@ export class ProjectsComponent {
     subtitle: 'React/TypeScript/Tailwind',
     image: 'images/todolist.png',
     imageAlt: 'To-do list screenshot',
+    imageWidth: '500',
     description:
       "A basic to-do list. This was a good learning experience on learning how to deal with React's useState.",
     projectLink: 'https://to-do-list-weld-kappa.vercel.app/',
@@ -28,6 +29,7 @@ export class ProjectsComponent {
     subtitle: 'React/JS',
     image: 'images/pomodoro.png',
     imageAlt: 'Pomodoro screenshot',
+    imageWidth: '500',
     description:
       'A pomodoro web app. I wanted to make my own Pomodoro to help me stay focused.',
     projectLink: 'https://pomodoro-lac-ten.vercel.app/',
@@ -40,6 +42,7 @@ export class ProjectsComponent {
     subtitle: 'HTML/CSS/JS',
     image: 'images/calculator.png',
     imageAlt: 'Calculator screenshot',
+    imageWidth: '300',
     description:
       'A typical calculator project. I made this for The Odin Project when I was going through it and it taught me quite a bit on thinking about how to do arithmetics with programming.',
     projectLink: 'https://daojim.github.io/calculator/',
@@ -52,6 +55,7 @@ export class ProjectsComponent {
     subtitle: 'HTML/CSS/JS',
     image: 'images/etchasketch.png',
     imageAlt: 'Etch-a-sketch screenshot',
+    imageWidth: '400',
     description: 'An etch-a-sketch webpage to test mouse hover.',
     projectLink: 'https://daojim.github.io/etch-a-sketch/',
     buttonLabel: 'Draw!',
@@ -63,10 +67,11 @@ export class ProjectsComponent {
     subtitle: 'Python/Flask/PokeAPI',
     image: 'images/pokedex.png',
     imageAlt: 'Pokedex soonscreenshot',
+    imageWidth: '500',
     description:
       'A future Pokedex project. The goal of this project is to learn more about APIs and I wanted more practice with Python. Started recently but currently on hold because a whole bunch of assignments, including this one, started to pile up!',
-    projectLink: 'https://github.com/Daojim/pokedex',
-    buttonLabel: 'Track the progress!',
+    projectLink: 'https://pokedex-jvah.onrender.com/',
+    buttonLabel: 'Search!',
     projectGithub: 'https://github.com/Daojim/pokedex',
   };
 
