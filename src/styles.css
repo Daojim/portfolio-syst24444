@@ -19,12 +19,12 @@ body {
   color: white;
 }
 
-/* .darkCheckbox {
-  color: white;
+.darkCheckbox {
+  color: white !important;
 }
 .normalCheckbox {
   color: black;
-} */
+}
 
 .normalCard {
   width: 600px;
@@ -74,4 +74,12 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.Card mat-card-content {
+  flex-grow: 1;
+}
+
+.Card mat-card-footer {
+  padding-left: 12px;
 }

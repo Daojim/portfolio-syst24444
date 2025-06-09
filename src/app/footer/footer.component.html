@@ -1,10 +1,13 @@
-<ul [ngClass]="'footer'">
-  {{
-    tech.techUsed
-  }}
-  <li>{{ tech.tech1 }}</li>
-  <li>{{ tech.tech2 }}</li>
-  <li>{{ tech.tech3 }}</li>
-  <li>{{ tech.tech4 }}</li>
-  <li>{{ tech.tech5 }}</li>
-</ul>
+<div class="footer">
+  <ul class="techlist">
+    {{
+      tech.techUsed
+    }}
+    <li>{{ tech.tech1 }}</li>
+    <li>{{ tech.tech2 }}</li>
+    <li>{{ tech.tech3 }}</li>
+    <li>{{ tech.tech4 }}</li>
+    <li>{{ tech.tech5 }}</li>
+  </ul>
+  <p class="made-by">Made by: {{ personal.first }} {{ personal.last }}</p>
+</div>
