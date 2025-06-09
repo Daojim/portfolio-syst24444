@@ -1,7 +1,7 @@
 <div class="CardDiv">
   @for (project of projects; track projects) {
   <div>
-    <mat-card class="Card">
+    <mat-card [ngClass]="darkMode ? 'darkCard' : 'normalCard'" class="Card">
       <mat-card-header class="matCardHeader">
         <mat-card-title>{{ project.title }}</mat-card-title>
         <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>

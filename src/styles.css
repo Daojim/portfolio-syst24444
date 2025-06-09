@@ -19,19 +19,35 @@ body {
   color: white;
 }
 
-.mat-checkbox-label {
+/* .darkCheckbox {
   color: white;
 }
+.normalCheckbox {
+  color: black;
+} */
 
-.Card {
+.normalCard {
   width: 600px;
   height: 800px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   overflow: hidden;
   box-sizing: border-box;
+  background-color: white;
+  color: black;
+}
+
+.darkCard {
+  width: 600px;
+  height: 800px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: rgb(32, 30, 30) !important;
+  color: white;
 }
 
 .CardDiv {
@@ -52,4 +68,10 @@ body {
   background-color: rgb(197, 30, 30);
   border-radius: 12px 12px 0px 0px;
   color: rgb(255, 255, 255);
+}
+
+.Card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

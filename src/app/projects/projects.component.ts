@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MaterialModule } from '../modules/material-ui.module';
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
@@ -11,6 +11,8 @@ import { Projects } from '../interfaces/project-interfaces';
   styleUrl: './projects.component.css',
 })
 export class ProjectsComponent {
+  @Input() darkMode: boolean = false;
+
   todolist: Projects = {
     id: 1,
     important: true,
