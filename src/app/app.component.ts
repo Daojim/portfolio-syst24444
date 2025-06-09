@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 import {
   Personal,
   Contacts,
@@ -25,12 +27,17 @@ import {
     ProjectsComponent,
     ContactComponent,
     MatCardModule,
+    MatCheckboxModule,
+    FormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'portfolio';
+
+  darkMode: boolean = false;
+
   mydata: Personal = {
     first: 'Jimmy',
     last: 'Dao',

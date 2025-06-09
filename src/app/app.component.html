@@ -2,8 +2,11 @@
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet"
 />
-<app-header [personal]="mydata" [contacts]="contacts"></app-header>
-<app-about [personal]="mydata"></app-about>
-<app-projects> </app-projects>
-<app-contact [contacts]="contacts"></app-contact>
-<app-footer [tech]="tech" [personal]="mydata"></app-footer>
+<div [ngClass]="darkMode ? 'dark' : 'normal'">
+  <mat-checkbox [(ngModel)]="darkMode">Dark Mode</mat-checkbox>
+  <app-header [personal]="mydata" [contacts]="contacts"></app-header>
+  <app-about [personal]="mydata"></app-about>
+  <app-projects> </app-projects>
+  <app-contact [contacts]="contacts"></app-contact>
+  <app-footer [tech]="tech" [personal]="mydata"></app-footer>
+</div>
