@@ -11,12 +11,4 @@ export class ContactComponent {
   @Input() contacts!: Contacts;
 
   blurb: string = 'Here are links to my social medias: ';
-
-  contactList: Contacts[] = [
-    {
-      socialName: 'linkedin',
-      socialLink: 'https://www.linkedin.com/in/daojim/',
-    },
-    { socialName: 'github', socialLink: 'https://github.com/daojim' },
-  ];
 }

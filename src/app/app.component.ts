@@ -46,4 +46,9 @@ export class AppComponent {
     tech4: 'Visual Studio Code',
     tech5: 'Github',
   };
+
+  contacts: Contacts = {
+    linkedin: 'https://www.linkedin.com/in/daojim/',
+    github: 'https://github.com/daojim',
+  };
 }

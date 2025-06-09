@@ -6,8 +6,8 @@ export interface Personal {
 }
 
 export interface Contacts {
-  socialName: string;
-  socialLink: string;
+  linkedin: string;
+  github: string;
 }
 
 export interface Technologies {
