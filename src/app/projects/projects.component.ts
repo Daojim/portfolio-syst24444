@@ -12,6 +12,8 @@ import { Projects } from '../interfaces/project-interfaces';
 })
 export class ProjectsComponent {
   todolist: Projects = {
+    id: 1,
+    important: true,
     title: 'To-do List',
     subtitle: 'React/TypeScript/Tailwind',
     image: 'images/todolist.png',
@@ -25,6 +27,8 @@ export class ProjectsComponent {
   };
 
   pomodoro: Projects = {
+    id: 2,
+    important: true,
     title: 'Pomodoro',
     subtitle: 'React/JS',
     image: 'images/pomodoro.png',
@@ -38,6 +42,8 @@ export class ProjectsComponent {
   };
 
   calculator: Projects = {
+    id: 3,
+    important: false,
     title: 'Calculator',
     subtitle: 'HTML/CSS/JS',
     image: 'images/calculator.png',
@@ -51,6 +57,8 @@ export class ProjectsComponent {
   };
 
   etch: Projects = {
+    id: 4,
+    important: false,
     title: 'Etch-a-sketch',
     subtitle: 'HTML/CSS/JS',
     image: 'images/etchasketch.png',
@@ -63,6 +71,8 @@ export class ProjectsComponent {
   };
 
   pokedex: Projects = {
+    id: 5,
+    important: true,
     title: 'Pokedex',
     subtitle: 'Python/Flask/PokeAPI',
     image: 'images/pokedex.png',
