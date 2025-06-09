@@ -1,5 +1,5 @@
-<div class="footer">
-  <ul class="techlist">
+<div [ngClass]="'footer'">
+  <ul [ngClass]="'techlist'">
     {{
       tech.techUsed
     }}
@@ -9,5 +9,5 @@
     <li>{{ tech.tech4 }}</li>
     <li>{{ tech.tech5 }}</li>
   </ul>
-  <p class="made-by">Made by: {{ personal.first }} {{ personal.last }}</p>
+  <p [ngClass]="'author'">Made by: {{ personal.first }} {{ personal.last }}</p>
 </div>

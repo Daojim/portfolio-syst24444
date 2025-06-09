@@ -81,7 +81,7 @@ export class ProjectsComponent {
     imageAlt: 'Pokedex soonscreenshot',
     imageWidth: '500',
     description:
-      'A future Pokedex project. The goal of this project is to learn more about APIs and I wanted more practice with Python. Started recently but currently on hold because a whole bunch of assignments, including this one, started to pile up!',
+      'My Pokedex project. The goal of this project is to learn more intereacting with API and I wanted more practice with Python.',
     projectLink: 'https://pokedex-jvah.onrender.com/',
     buttonLabel: 'Search!',
     projectGithub: 'https://github.com/Daojim/pokedex',
