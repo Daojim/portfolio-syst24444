@@ -12,14 +12,23 @@ body {
 
 .Card {
   width: 600px;
+  height: 800px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .CardDiv {
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 20px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .matCardHeader {
