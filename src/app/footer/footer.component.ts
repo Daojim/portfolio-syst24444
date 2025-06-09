@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Technologies } from '../interfaces/project-interfaces';
+import { Technologies, Personal } from '../interfaces/project-interfaces';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,4 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class FooterComponent {
   @Input() tech!: Technologies;
+  @Input() personal!: Personal;
 }
