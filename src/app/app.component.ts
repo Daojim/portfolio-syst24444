@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 import {
   Personal,
   Contacts,
@@ -25,22 +27,22 @@ import {
     ProjectsComponent,
     ContactComponent,
     MatCardModule,
+    MatCheckboxModule,
+    FormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'portfolio';
+
+  darkMode: boolean = false;
+
   mydata: Personal = {
     first: 'Jimmy',
     last: 'Dao',
     role: 'Software Development and Network Engineer Student',
     motto: 'Just do it.',
-  };
-
-  contacts: Contacts = {
-    linkedin: 'https://www.linkedin.com/in/daojim/',
-    github: 'https://github.com/daojim',
   };
 
   tech: Technologies = {
@@ -50,5 +52,10 @@ export class AppComponent {
     tech3: 'Google Fonts',
     tech4: 'Visual Studio Code',
     tech5: 'Github',
+  };
+
+  contacts: Contacts = {
+    linkedin: 'https://www.linkedin.com/in/daojim/',
+    github: 'https://github.com/daojim',
   };
 }

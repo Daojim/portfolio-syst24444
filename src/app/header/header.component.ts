@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Personal } from '../interfaces/project-interfaces';
+import { Contacts, Personal } from '../interfaces/project-interfaces';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,4 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   @Input() personal!: Personal;
+  @Input() contacts!: Contacts;
 }

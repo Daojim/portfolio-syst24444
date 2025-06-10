@@ -7,15 +7,14 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.normal {
   background-color: rgb(219, 170, 180);
+  color: black;
 }
 
-.Card {
-  width: 600px;
-}
-
-.CardDiv {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.dark {
+  background-color: rgb(48, 45, 45);
+  color: white;
 }

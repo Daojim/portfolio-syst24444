@@ -1,163 +1,34 @@
 <div class="CardDiv">
+  @for (project of projects; track project) {
   <div>
-    <mat-card class="Card">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          [ngStyle]="{ backgroundColor: 'green' }"
-          class=""
-        ></div>
-        <mat-card-title>{{ todolist.title }}</mat-card-title>
-        <mat-card-subtitle>{{ todolist.subtitle }}</mat-card-subtitle>
+    <mat-card [ngClass]="darkMode ? 'darkCard' : 'normalCard'" class="Card">
+      <mat-card-header class="matCardHeader">
+        <mat-card-title>{{ project.title }}</mat-card-title>
+        <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
       </mat-card-header>
 
       <mat-card-content>
         <img
           mat-card-image
-          src="{{ todolist.image }}"
-          alt="{{ todolist.imageAlt }}"
-          width=""
+          [src]="project.image"
+          alt="{{ project.imageAlt }}"
+          width="{{ project.imageWidth }}"
         />
         <p>
-          {{ todolist.description }}
+          {{ project.description }}
         </p>
       </mat-card-content>
 
       <mat-card-actions>
         <button mat-button>
-          <a href="{{ todolist.projectLink }}">{{ todolist.buttonLabel }}</a>
-        </button>
-      </mat-card-actions>
-
-      <mat-card-footer>{{ todolist.projectGithub }}</mat-card-footer>
-    </mat-card>
-  </div>
-  <div>
-    <mat-card class="Card">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          [ngStyle]="{ backgroundColor: 'red' }"
-          class=""
-        ></div>
-        <mat-card-title>{{ pomodoro.title }}</mat-card-title>
-        <mat-card-subtitle>{{ pomodoro.subtitle }}</mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-card-content>
-        <img
-          mat-card-image
-          src="{{ pomodoro.image }}"
-          alt=" {{ pomodoro.imageAlt }} "
-        />
-        <p>
-          {{ pomodoro.description }}
-        </p>
-      </mat-card-content>
-
-      <mat-card-actions>
-        <button mat-button>
-          <a href="{{ pomodoro.projectLink }}">{{ pomodoro.buttonLabel }}</a>
-        </button>
-      </mat-card-actions>
-
-      <mat-card-footer>{{ pomodoro.projectGithub }}</mat-card-footer>
-    </mat-card>
-  </div>
-  <div>
-    <mat-card class="Card">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          [ngStyle]="{ backgroundColor: 'yellow' }"
-          class=""
-        ></div>
-        <mat-card-title>{{ calculator.title }}</mat-card-title>
-        <mat-card-subtitle>{{ calculator.subtitle }}</mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-card-content>
-        <img
-          mat-card-image
-          src="{{ calculator.image }}"
-          alt="{{ calculator.imageAlt }}"
-          width="300"
-        />
-        <p>{{ calculator.description }}</p>
-      </mat-card-content>
-
-      <mat-card-actions>
-        <button mat-button>
-          <a href="{{ calculator.projectLink }}">{{
-            calculator.buttonLabel
+          <a href="{{ project.projectLink }}" target="_blank">{{
+            project.buttonLabel
           }}</a>
         </button>
       </mat-card-actions>
 
-      <mat-card-footer>{{ calculator.projectGithub }}</mat-card-footer>
+      <mat-card-footer>{{ project.projectGithub }}</mat-card-footer>
     </mat-card>
   </div>
-
-  <div>
-    <mat-card class="Card">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          [ngStyle]="{ backgroundColor: 'blue' }"
-          class=""
-        ></div>
-        <mat-card-title>{{ etch.title }}</mat-card-title>
-        <mat-card-subtitle>{{ etch.subtitle }}</mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-card-content>
-        <img
-          mat-card-image
-          src="{{ etch.image }}"
-          alt="{{ etch.imageAlt }}"
-          width="500"
-        />
-        <p>{{ etch.description }}</p>
-      </mat-card-content>
-
-      <mat-card-actions>
-        <button mat-button>
-          <a href="{{ etch.projectLink }}">{{ etch.buttonLabel }}</a>
-        </button>
-      </mat-card-actions>
-
-      <mat-card-footer>{{ etch.projectGithub }}</mat-card-footer>
-    </mat-card>
-  </div>
-  <div>
-    <mat-card class="Card">
-      <mat-card-header>
-        <div
-          mat-card-avatar
-          [ngStyle]="{ backgroundColor: 'orange' }"
-          class=""
-        ></div>
-        <mat-card-title>{{ pokedex.title }}</mat-card-title>
-        <mat-card-subtitle>{{ pokedex.subtitle }}</mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-card-content>
-        <img
-          mat-card-image
-          src="{{ pokedex.image }}"
-          alt="{{ pokedex.imageAlt }}"
-          width=""
-        />
-        <p></p>
-      </mat-card-content>
-
-      <mat-card-actions>
-        <button mat-button>
-          <a href="{{ pokedex.projectLink }}">{{ pokedex.buttonLabel }}</a>
-        </button>
-      </mat-card-actions>
-
-      <mat-card-footer>{{ pokedex.projectGithub }}</mat-card-footer>
-    </mat-card>
-  </div>
+  }
 </div>

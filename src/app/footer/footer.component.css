@@ -1,14 +1,28 @@
-ul {
-  list-style: square;
+.footer {
+  position: relative;
   background-color: cadetblue;
+  padding: 1rem;
 }
 
-ul > li {
+.techlist {
+  list-style: square;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.techlist > li {
   display: inline-block;
   margin: 15px;
   padding: 15px;
 }
 
-li:hover {
+.techlist > li:hover {
   background-color: aqua;
+}
+
+.author {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
 }

@@ -11,6 +11,4 @@ export class ContactComponent {
   @Input() contacts!: Contacts;
 
   blurb: string = 'Here are links to my social medias: ';
-  linkedinLink: string = 'https://www.linkedin.com/in/daojim/';
-  githubLink: string = 'https://github.com/Daojim/';
 }

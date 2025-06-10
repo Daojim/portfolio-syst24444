@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { Personal } from '../interfaces/project-interfaces';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
