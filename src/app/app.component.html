@@ -4,7 +4,6 @@
 />
 <div [ngClass]="darkMode ? 'dark' : 'normal'">
   <mat-checkbox [(ngModel)]="darkMode">Dark Mode</mat-checkbox>
-  <!-- <span>Dark Mode</span> -->
   <app-header [personal]="mydata" [contacts]="contacts"></app-header>
   <app-about [personal]="mydata"></app-about>
   <app-projects [darkMode]="darkMode"></app-projects>
