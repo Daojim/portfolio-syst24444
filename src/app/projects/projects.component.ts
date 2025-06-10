@@ -13,7 +13,7 @@ import { Projects } from '../interfaces/project-interfaces';
 export class ProjectsComponent {
   @Input() darkMode: boolean = false;
 
-  projects = [
+  projects: Projects[] = [
     {
       id: 1,
       important: true,
