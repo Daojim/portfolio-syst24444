@@ -19,7 +19,7 @@ export class ProjectsComponent {
 
   constructor(private cardService: CardbuttonsService) {}
 
-  like() {
-    this.cardService.likeCard();
+  like(elem: any) {
+    this.cardService.likeCard(elem);
   }
 }

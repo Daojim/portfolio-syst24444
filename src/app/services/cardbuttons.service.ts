@@ -4,5 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CardbuttonsService {
-  likeCard() {}
+  likeCard(data: any) {
+    document.getElementById(data)!.style.color = 'crimson';
+  }
 }
