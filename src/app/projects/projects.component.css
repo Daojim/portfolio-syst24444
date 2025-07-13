@@ -55,3 +55,8 @@
 .Card mat-card-footer {
   padding-left: 12px;
 }
+
+input {
+  display: block;
+  margin: 20px auto;
+}

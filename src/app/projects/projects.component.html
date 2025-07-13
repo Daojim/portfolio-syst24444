@@ -1,5 +1,12 @@
+<input
+  type="text"
+  placeholder="Filter by title"
+  [(ngModel)]="inputText"
+  (input)="filterProjects()"
+/>
+
 <div class="CardDiv">
-  @for (project of projects; track project) {
+  @for (project of filteredData; track project) {
   <div>
     <mat-card [ngClass]="darkMode ? 'darkCard' : 'normalCard'" class="Card">
       <mat-card-header class="matCardHeader">
