@@ -6,18 +6,16 @@
   <mat-checkbox [(ngModel)]="darkMode">Dark Mode</mat-checkbox>
   <app-header [personal]="mydata" [contacts]="contacts"></app-header>
   <mat-toolbar [ngStyle]="{ textAlign: 'center' }">
-    <a class="spacer">
+    <a class="spacer" routerLink="" routerLinkActive="activebutton">
       <button mat-raised-button color="accent">Home</button>
     </a>
-    <a class="spacer">
+    <a class="spacer" routerLink="about" routerLinkActive="activebutton">
       <button mat-raised-button color="accent">About</button>
     </a>
-    <a class="spacer">
+    <a class="spacer" routerLink="contact" routerLinkActive="activebutton">
       <button mat-raised-button color="accent">Contact</button>
     </a>
   </mat-toolbar>
-  <app-about [personal]="mydata"></app-about>
-  <app-projects [darkMode]="darkMode" [projects]="projects"></app-projects>
-  <app-contact [contacts]="contacts"></app-contact>
+  <router-outlet />
   <app-footer [tech]="tech" [personal]="mydata"></app-footer>
 </div>

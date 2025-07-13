@@ -8,7 +8,10 @@ import { Contacts } from '../interfaces/project-interfaces';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
-  @Input() contacts!: Contacts;
+  contacts: Contacts = {
+    linkedin: 'https://www.linkedin.com/in/daojim/',
+    github: 'https://github.com/daojim',
+  };
 
   blurb: string = 'Here are links to my social medias: ';
 }
