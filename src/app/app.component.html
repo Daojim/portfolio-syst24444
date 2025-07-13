@@ -5,6 +5,17 @@
 <div [ngClass]="darkMode ? 'dark' : 'normal'">
   <mat-checkbox [(ngModel)]="darkMode">Dark Mode</mat-checkbox>
   <app-header [personal]="mydata" [contacts]="contacts"></app-header>
+  <mat-toolbar [ngStyle]="{ textAlign: 'center' }">
+    <a class="spacer">
+      <button mat-raised-button color="accent">Home</button>
+    </a>
+    <a class="spacer">
+      <button mat-raised-button color="accent">About</button>
+    </a>
+    <a class="spacer">
+      <button mat-raised-button color="accent">Contact</button>
+    </a>
+  </mat-toolbar>
   <app-about [personal]="mydata"></app-about>
   <app-projects [darkMode]="darkMode" [projects]="projects"></app-projects>
   <app-contact [contacts]="contacts"></app-contact>
