@@ -5,7 +5,10 @@
 <div [ngClass]="darkMode ? 'dark' : 'normal'">
   <mat-checkbox [(ngModel)]="darkMode">Dark Mode</mat-checkbox>
   <app-header [personal]="mydata" [contacts]="contacts"></app-header>
-  <mat-toolbar [ngStyle]="{ textAlign: 'center' }">
+  <mat-toolbar
+    [ngClass]="darkMode ? 'dark' : 'normal'"
+    [ngStyle]="{ textAlign: 'center' }"
+  >
     <a class="spacer" routerLink="" routerLinkActive="activebutton">
       <button mat-raised-button color="accent">Home</button>
     </a>

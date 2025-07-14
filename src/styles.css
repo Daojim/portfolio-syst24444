@@ -18,3 +18,13 @@ body {
   background-color: rgb(48, 45, 45);
   color: white;
 }
+
+.dark mat-toolbar {
+  background-color: rgb(48, 45, 45) !important;
+  color: white;
+}
+
+.normal mat-toolbar {
+  background-color: rgb(219, 170, 180) !important;
+  color: black;
+}

@@ -22,22 +22,6 @@ export class ProjectsComponent {
     this.cardService.likeCard(elem);
   }
 
-  filteredData: Projects[] = [];
-  inputText: string = '';
-
-  filterProjects() {
-    if (this.inputText === '') {
-      this.filteredData = this.projects;
-    } else {
-      this.filteredData = [];
-      for (let project of this.projects) {
-        if (project.title.toLowerCase() === this.inputText.toLowerCase()) {
-          this.filteredData.push(project);
-        }
-      }
-    }
-  }
-
   projects: Projects[] = [
     {
       id: 1,
@@ -109,4 +93,20 @@ export class ProjectsComponent {
       projectGithub: 'https://github.com/Daojim/pokedex',
     },
   ];
+
+  filteredData: Projects[] = this.projects;
+  inputText: string = '';
+
+  filterProjects() {
+    if (this.inputText === '') {
+      this.filteredData = this.projects;
+    } else {
+      this.filteredData = [];
+      for (let project of this.projects) {
+        if (project.title.toLowerCase() === this.inputText.toLowerCase()) {
+          this.filteredData.push(project);
+        }
+      }
+    }
+  }
 }
