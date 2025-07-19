@@ -60,3 +60,10 @@ input {
   display: block;
   margin: 20px auto;
 }
+
+.search-bar {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: block;
+}

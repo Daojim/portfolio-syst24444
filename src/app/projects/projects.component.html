@@ -1,10 +1,12 @@
-<input
-  type="text"
-  placeholder="Filter by title"
-  [(ngModel)]="inputText"
-  (input)="filterProjects()"
-/>
-
+<mat-form-field class="search-bar">
+  <input
+    matInput
+    type="text"
+    placeholder="Filter by title"
+    [(ngModel)]="inputText"
+    (input)="filterProjects()"
+  />
+</mat-form-field>
 <div class="CardDiv">
   @for (project of filteredData; track project) {
   <div>

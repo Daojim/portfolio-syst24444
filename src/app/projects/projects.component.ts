@@ -103,7 +103,9 @@ export class ProjectsComponent {
     } else {
       this.filteredData = [];
       for (let project of this.projects) {
-        if (project.title.toLowerCase() === this.inputText.toLowerCase()) {
+        if (
+          project.title.toLowerCase().includes(this.inputText.toLowerCase())
+        ) {
           this.filteredData.push(project);
         }
       }
