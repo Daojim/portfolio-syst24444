@@ -4,13 +4,9 @@ import { MaterialModule } from './modules/material-ui.module';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
-import { Projects } from './interfaces/project-interfaces';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import {
   Personal,
@@ -25,9 +21,6 @@ import {
     CommonModule,
     HeaderComponent,
     FooterComponent,
-    AboutComponent,
-    ProjectsComponent,
-    ContactComponent,
     MatCardModule,
     MatCheckboxModule,
     FormsModule,
