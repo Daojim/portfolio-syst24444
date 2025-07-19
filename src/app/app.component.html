@@ -2,7 +2,7 @@
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet"
 />
-<div [ngClass]="darkMode ? 'dark' : 'normal'">
+<div class="page-container" [ngClass]="darkMode ? 'dark' : 'normal'">
   <mat-checkbox [(ngModel)]="darkMode">Dark Mode</mat-checkbox>
   <app-header [personal]="mydata" [contacts]="contacts"></app-header>
   <mat-toolbar
@@ -19,6 +19,8 @@
       <button mat-raised-button color="accent">Contact</button>
     </a>
   </mat-toolbar>
-  <router-outlet />
-  <app-footer [tech]="tech" [personal]="mydata"></app-footer>
+  <main class="main-content">
+    <router-outlet />
+  </main>
+  <app-footer class="footer" [tech]="tech" [personal]="mydata"></app-footer>
 </div>

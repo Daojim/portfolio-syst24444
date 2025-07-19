@@ -1,3 +1,17 @@
 .spacer {
   flex: 1 1 auto;
 }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+app-footer {
+  flex-shrink: 0;
+}
