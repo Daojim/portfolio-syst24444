@@ -1,3 +1,10 @@
 <div [ngClass]="'aboutSection'">
   <p>{{ about }}</p>
 </div>
+
+<h3>Skills</h3>
+<ul class="skillsList">
+  @for (skill of skills; track skill) {
+  <li>{{ skill }}</li>
+  }
+</ul>

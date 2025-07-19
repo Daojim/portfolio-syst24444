@@ -14,4 +14,6 @@ export class ContactComponent {
   };
 
   blurb: string = 'Here are links to my social medias: ';
+
+  email: string = 'daojim.dev@gmail.com';
 }
