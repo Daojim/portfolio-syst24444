@@ -19,3 +19,17 @@
   background: black;
   color: white;
 }
+
+.flexSetup {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.flex1 {
+  flex: 1;
+}
+
+.error {
+  font-size: 0.75em;
+  font-style: italic;
+}

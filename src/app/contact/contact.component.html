@@ -23,3 +23,65 @@
     </li>
   </ul>
 </div>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <hr />
+
+  <fieldset>
+    <legend><strong>Personal Information</strong></legend>
+    <div class="flexSetup">
+      <mat-form-field class="example-full-width flex1" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          id="name"
+          ngModel
+          name="name"
+          required
+          #name="ngModel"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width flex1" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          id="email"
+          type="email"
+          ngModel
+          name="email"
+          required
+          #email="ngModel"
+        />
+      </mat-form-field>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend><strong>Comment Section</strong></legend>
+    <div class="flexSetup">
+      <mat-form-field appearance="fill" class="flex1">
+        <mat-label>Comment</mat-label>
+        <textarea
+          matInput
+          id="comment"
+          ngModel
+          name="comment"
+          required
+          #comment="ngModel"
+        ></textarea>
+      </mat-form-field>
+    </div>
+  </fieldset>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="!f.valid">
+    Submit
+  </button>
+  <!-- @if (!name.valid) {
+  <span class="error">Name is Required</span>
+  } @if (!email.valid) {
+  <span class="error">Email is Required</span>
+  } @if (!comment.valid) {
+  <span class="error">Comment is Required</span>
+  } -->
+</form>
