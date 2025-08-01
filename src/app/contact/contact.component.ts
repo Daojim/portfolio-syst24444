@@ -3,6 +3,7 @@ import { Contacts } from '../interfaces/project-interfaces';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../modules/material-ui.module';
 import { MatDialog } from '@angular/material/dialog';
+import { PopupThankyouComponent } from '../popup-thankyou/popup-thankyou.component';
 
 @Component({
   selector: 'app-contact',
@@ -24,17 +25,13 @@ export class ContactComponent {
   contactEmail: string = '';
   contactComment: string = '';
 
+  constructor(public dialog: MatDialog) {}
+
   onSubmit(form: any): void {
     if (form.valid) {
-      // Test with alert for now
-      alert('Thank you for your comment');
+      const dialogRef = this.dialog.open(PopupThankyouComponent);
 
-      // Clear the form
-      this.contactName = '';
-      this.contactEmail = '';
-      this.contactComment = '';
-
-      // Reset form validation state
+      // Clear form fields after submission
       form.resetForm();
     }
   }

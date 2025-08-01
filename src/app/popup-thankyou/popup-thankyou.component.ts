@@ -4,7 +4,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-popup-thankyou',
-  imports: [],
+  imports: [MaterialModule],
   templateUrl: './popup-thankyou.component.html',
   styleUrl: './popup-thankyou.component.css',
 })
@@ -13,4 +13,8 @@ export class PopupThankyouComponent {
     public dialogRef: MatDialogRef<PopupThankyouComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
+
+  onOK() {
+    this.dialogRef.close();
+  }
 }
