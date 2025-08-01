@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Contacts } from '../interfaces/project-interfaces';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../modules/material-ui.module';
@@ -20,8 +20,6 @@ export class ContactComponent {
 
   blurb: string = '';
 
-  email: string = '';
-
   constructor(
     public dialog: MatDialog,
     private getDataService: JsonGetService
@@ -33,7 +31,6 @@ export class ContactComponent {
       .subscribe((data) => {
         this.contacts = data.contacts;
         this.blurb = data.blurb;
-        this.email = data.email;
       });
   }
 
