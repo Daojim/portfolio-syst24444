@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "important": true,
+      "title": "Calculator App",
+      "subtitle": "A functional calculator built with JavaScript",
+      "image": "calculator.png",
+      "imageAlt": "Calculator application screenshot",
+      "imageWidth": "300px",
+      "description": "A responsive calculator application that performs basic arithmetic operations. Features a clean UI design and handles edge cases like division by zero.",
+      "projectLink": "https://your-calculator-demo.com",
+      "buttonLabel": "View Demo",
+      "projectGithub": "https://github.com/daojim/calculator-app"
+    },
+    {
+      "id": 2,
+      "important": true,
+      "title": "Etch-a-Sketch",
+      "subtitle": "Digital drawing pad with customizable grid",
+      "image": "etchasketch.png",
+      "imageAlt": "Etch-a-Sketch application screenshot",
+      "imageWidth": "300px",
+      "description": "An interactive drawing application inspired by the classic Etch-a-Sketch toy. Users can draw by hovering over a grid with various color and size options.",
+      "projectLink": "https://your-etchasketch-demo.com",
+      "buttonLabel": "Try It Out",
+      "projectGithub": "https://github.com/daojim/etch-a-sketch"
+    },
+    {
+      "id": 3,
+      "important": false,
+      "title": "Pokedex",
+      "subtitle": "Pokemon information lookup tool",
+      "image": "pokedex.png",
+      "imageAlt": "Pokedex application screenshot",
+      "imageWidth": "300px",
+      "description": "A Pokemon database application that fetches data from the PokeAPI. Users can search for Pokemon and view detailed information including stats, types, and abilities.",
+      "projectLink": "https://your-pokedex-demo.com",
+      "buttonLabel": "Explore",
+      "projectGithub": "https://github.com/daojim/pokedex-app"
+    },
+    {
+      "id": 4,
+      "important": true,
+      "title": "Pomodoro Timer",
+      "subtitle": "Productivity timer with break intervals",
+      "image": "pomodoro.png",
+      "imageAlt": "Pomodoro timer application screenshot",
+      "imageWidth": "300px",
+      "description": "A productivity tool based on the Pomodoro Technique. Features customizable work and break intervals, notifications, and session tracking.",
+      "projectLink": "https://your-pomodoro-demo.com",
+      "buttonLabel": "Start Focus",
+      "projectGithub": "https://github.com/daojim/pomodoro-timer"
+    },
+    {
+      "id": 5,
+      "important": false,
+      "title": "Todo List",
+      "subtitle": "Task management application",
+      "image": "todolist.png",
+      "imageAlt": "Todo list application screenshot",
+      "imageWidth": "300px",
+      "description": "A comprehensive task management app with features like adding, editing, deleting, and marking tasks as complete. Includes local storage for persistence.",
+      "projectLink": "https://your-todolist-demo.com",
+      "buttonLabel": "Manage Tasks",
+      "projectGithub": "https://github.com/daojim/todo-list-app"
+    }
+  ]
+}
