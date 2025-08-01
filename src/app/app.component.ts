@@ -13,6 +13,7 @@ import {
   Contacts,
   Technologies,
 } from './interfaces/project-interfaces';
+import { JsonGetService } from './services/json-get.service';
 @Component({
   selector: 'app-root',
   imports: [
@@ -36,23 +37,40 @@ export class AppComponent {
   darkMode: boolean = false;
 
   mydata: Personal = {
-    first: 'Jimmy',
-    last: 'Dao',
-    role: 'Software Development and Network Engineer Student',
-    motto: 'Just do it.',
+    first: '',
+    last: '',
+    role: '',
+    motto: '',
   };
 
   tech: Technologies = {
-    techUsed: 'Technologies used: ',
-    tech1: 'Angular',
-    tech2: 'Material UI',
-    tech3: 'Google Fonts',
-    tech4: 'Visual Studio Code',
-    tech5: 'Github',
+    techUsed: '',
+    tech1: '',
+    tech2: '',
+    tech3: '',
+    tech4: '',
+    tech5: '',
   };
 
   contacts: Contacts = {
-    linkedin: 'https://www.linkedin.com/in/daojim/',
-    github: 'https://github.com/daojim',
+    linkedin: '',
+    github: '',
   };
+
+  constructor(private getDataService: JsonGetService) {}
+
+  ngOnInit() {
+    this.getDataService
+      .getDataFromUrl('/data/personalData.json')
+      .subscribe((data) => {
+        this.mydata = data.personal;
+        this.contacts = data.contacts;
+      });
+
+    this.getDataService
+      .getDataFromUrl('/data/technologiesData.json')
+      .subscribe((data) => {
+        this.tech = data.technologies;
+      });
+  }
 }

@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../modules/material-ui.module';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupThankyouComponent } from '../popup-thankyou/popup-thankyou.component';
+import { JsonGetService } from '../services/json-get.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,19 +14,28 @@ import { PopupThankyouComponent } from '../popup-thankyou/popup-thankyou.compone
 })
 export class ContactComponent {
   contacts: Contacts = {
-    linkedin: 'https://www.linkedin.com/in/daojim/',
-    github: 'https://github.com/daojim',
+    linkedin: '',
+    github: '',
   };
 
-  blurb: string = 'Here are links to my social medias: ';
+  blurb: string = '';
 
-  email: string = 'daojim.dev@gmail.com';
+  email: string = '';
 
-  contactName: string = '';
-  contactEmail: string = '';
-  contactComment: string = '';
+  constructor(
+    public dialog: MatDialog,
+    private getDataService: JsonGetService
+  ) {}
 
-  constructor(public dialog: MatDialog) {}
+  ngOnInit() {
+    this.getDataService
+      .getDataFromUrl('/data/contactData.json')
+      .subscribe((data) => {
+        this.contacts = data.contacts;
+        this.blurb = data.blurb;
+        this.email = data.email;
+      });
+  }
 
   onSubmit(form: any): void {
     if (form.valid) {
