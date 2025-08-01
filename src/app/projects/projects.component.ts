@@ -1,7 +1,7 @@
-import { Component, Input, Inject, PLATFORM_ID } from '@angular/core';
+import { Component } from '@angular/core';
 import { MaterialModule } from '../modules/material-ui.module';
 import { MatCardModule } from '@angular/material/card';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Projects } from '../interfaces/project-interfaces';
 import { CardbuttonsService } from '../services/cardbuttons.service';
 import { FormsModule } from '@angular/forms';
@@ -12,19 +12,14 @@ import { JsonGetService } from '../services/json-get.service';
   imports: [MaterialModule, MatCardModule, CommonModule, FormsModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
-  providers: [CardbuttonsService, JsonGetService],
+  // providers: [CardbuttonsService],
 })
 export class ProjectsComponent {
-  @Input() darkMode: boolean = false;
-  isBrowser: boolean;
-
+  // @Input() darkMode: boolean = false;
   constructor(
     private cardService: CardbuttonsService,
-    private getDataService: JsonGetService,
-    @Inject(PLATFORM_ID) private platformId: Object
-  ) {
-    this.isBrowser = isPlatformBrowser(this.platformId);
-  }
+    private getDataService: JsonGetService
+  ) {}
 
   jsonData: any;
   url = '/data/projectsData.json';
