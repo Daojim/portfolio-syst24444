@@ -28,12 +28,9 @@ export class ProjectsComponent {
   projectData: Projects[] = [];
   ngOnInit() {
     this.getDataService.getDataFromUrl(this.url).subscribe((data) => {
-      console.log('JSON data loaded:', data);
       this.jsonData = data;
       this.projectData = this.jsonData.projects;
       this.filteredData = this.projectData;
-      console.log('Project data:', this.projectData);
-      console.log('Filtered data:', this.filteredData);
     });
   }
 
