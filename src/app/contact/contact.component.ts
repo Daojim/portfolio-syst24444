@@ -39,7 +39,9 @@ export class ContactComponent {
       const dialogRef = this.dialog.open(PopupThankyouComponent);
 
       // Clear form fields after submission
-      form.resetForm();
+      dialogRef.afterClosed().subscribe(() => {
+        form.resetForm();
+      });
     }
   }
 }
